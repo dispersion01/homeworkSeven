@@ -43,7 +43,7 @@ public class Main {
         String space = " ";
         String fullName = lastName + " " +  firstName + " " +  middleName;
         fullName = fullName.replace(" ", "; ");
-        System.out.println(fullName);
+        System.out.println("Данные ФИО сотрудника для административного отдела — "+ fullName);
 
     }
 
@@ -56,6 +56,6 @@ public class Main {
         String lastName = "Семёнович";
         lastName = lastName.replace("ё", "е");
         String fullName = lastName + " " + firstName + " " + middleName;
-        System.out.println(fullName);
+        System.out.println("Данные ФИО сотрудника — "+ fullName);
     }
 }
