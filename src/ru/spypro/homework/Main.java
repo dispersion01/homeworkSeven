@@ -18,7 +18,6 @@ public class Main {
         String space = " ";
         String fullName = lastName + space + firstName + space + middleName;
         System.out.println("ФИО сотрудника — " + fullName);
-
     }
 
     public static void exerciseTwo() {
@@ -32,7 +31,6 @@ public class Main {
         String space = " ";
         String fullName = lastName + space + firstName + space + middleName;
         System.out.println("Данные ФИО сотрудника для заполнения отчета —  " + fullName);
-
     }
 
     public static void exerciseThree() {
@@ -44,18 +42,15 @@ public class Main {
         String fullName = lastName + " " +  firstName + " " +  middleName;
         fullName = fullName.replace(" ", "; ");
         System.out.println("Данные ФИО сотрудника для административного отдела — "+ fullName);
-
     }
 
     public static void exerciseFour() {
         System.out.println("Задание 4");
         String firstName = "Иванов";
-        firstName = firstName.replace("ё", "е");
         String middleName = "Семён";
-        middleName = middleName.replace("ё", "е");
         String lastName = "Семёнович";
-        lastName = lastName.replace("ё", "е");
         String fullName = lastName + " " + firstName + " " + middleName;
+        fullName = fullName.replaceAll("ё", "е");
         System.out.println("Данные ФИО сотрудника — "+ fullName);
     }
 }
